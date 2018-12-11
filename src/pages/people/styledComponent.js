@@ -1,0 +1,170 @@
+import styled from 'styled-components'
+
+const PeopleCont = styled.div`
+    width:100%;
+    height:100%;
+`
+const Banner = styled.div`
+    position:relative;
+    width:100%;
+    padding-bottom:77.2%;
+    font-size:0;
+    img{
+        position:absolute;
+        width:100%;
+        height:100%;
+    }
+    img:nth-child(2){
+        position:absolute;
+        width:.6831rem;
+        height:.6831rem;
+        border-radius:50%;
+        top:.6rem;
+        left:50%;
+        z-index:1;
+        margin-left:-.3415rem
+    }
+    span{
+        width:100%;
+        height:.18rem;
+        line-height:.18rem;
+        margin-top:.15rem;
+        color:#fff;
+        position:absolute;
+        top:1.25rem;
+        left:0;
+        z-index:1;
+        font-size:.16rem;
+        text-align:center;
+    }
+    span:nth-child(4){
+        width:100%;
+        height:.18rem;
+        line-height:.18rem;
+        margin-top:.15rem;
+        color:#fff;
+        position:absolute;
+        top:1.5rem;
+        left:0;
+        z-index:1;
+        font-size:.16rem;
+        text-align:center;
+    }
+    ul{
+        position:absolute;
+        bottom: 0;
+        width:100%;
+        height:.5rem;
+        background-color: rgba(0,0,0,.22);
+        display:flex;
+        li{
+            flex:1;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            p{
+                img{
+                    width:.13rem;
+                    height:.13rem;
+                    margin-left:-.22rem;
+                }
+                color:#fff;
+                width:100%;
+                height:.2rem;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:.16rem;
+            }
+        }
+    }
+    
+`
+const List = styled.ul`
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    li{
+        width:100%;
+        height:.44rem;
+        display:flex;
+        padding:.1rem;
+        justify-content:space-between;
+        background:#fff;
+        margin:.02rem 0;
+        i{
+            width:.22rem;
+            margin-right:.1rem;
+            img{
+                width:100%;
+            }
+        }
+        div{
+            flex:1;
+            display:flex;
+            justify-content:space-between;
+            font-size:.16rem;
+            span{
+                color:#262626;
+            }
+            span:nth-child(2){
+                color:#31b2ed;
+            }
+        }
+        i:last-child{
+            width:.22rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-right:0;
+            img{
+                width:70%;
+            }
+        }
+    }
+`
+const Tips = styled.ul`
+    display:flex;
+    padding:.1rem;
+    height:.68rem;
+    background:#fff;
+    li{
+        width:20%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        i{
+            flex:1;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            img{
+                width:.25rem;
+                height:.25rem;
+            }
+            
+        }
+        
+        span{
+            width:100%;
+            height:.18rem;
+            line-height:.18rem;
+            text-align:center;
+            color:#999;
+            font-size:.16rem;
+        }
+    }
+    li:nth-child(3) i img{
+                width:.45rem;
+                height:.30rem;
+            }
+`
+export{
+    PeopleCont,
+    Banner,
+    List,
+    Tips
+}
